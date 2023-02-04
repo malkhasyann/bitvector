@@ -17,6 +17,7 @@ BitVector::~BitVector()
     delete[] this->_array;
 }
 
+// mutator: set 1 in the given index
 void BitVector::set(int index)
 {
     if (index >= this->_size)
@@ -28,6 +29,7 @@ void BitVector::set(int index)
     this->_array[this->_array_size - arr_index - 1] |= (1 << bit_index);
 }
 
+// mutator: set 0 in the given index
 void BitVector::reset(int index)
 {
     if (index >= this->_size)

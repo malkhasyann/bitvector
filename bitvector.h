@@ -4,9 +4,9 @@
 class BitVector
 {
     private:
-        int _size;
-        int* _array;
-        int _array_size;
+        int _size;  // size of the bitvector
+        int* _array;  // internal array of integers
+        int _array_size;  // size of the array
     public:
         BitVector(int size);
         ~BitVector();
